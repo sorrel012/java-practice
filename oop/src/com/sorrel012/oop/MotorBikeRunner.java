@@ -7,12 +7,12 @@ public class MotorBikeRunner {
 
 		ducati.start();
 		bmw.start();
+		System.out.println();
 
 		ducati.setSpeed(100);
+		System.out.printf("ducati's speed is %dkm/h\n", ducati.getSpeed());
 		bmw.setSpeed(80);
-
-		ducati.setSpeed(20);
-		bmw.setSpeed(0);
+		System.out.printf("bmw's speed is %dkm/h\n", bmw.getSpeed());
 	}
 
 }
