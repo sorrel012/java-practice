@@ -8,7 +8,12 @@ public class MotorBike {
 	}
 
 	public void setSpeed(int speed) {
-		this.speed = speed;
+		if (speed >= 0)
+			this.speed = speed;
+	}
+
+	public void increaseSpeed(int howMuch) {
+		this.speed += howMuch;
 	}
 
 	void start() {
