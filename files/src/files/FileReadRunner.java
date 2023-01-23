@@ -13,7 +13,10 @@ public class FileReadRunner {
 //		List<String> lines = Files.readAllLines(pathFileToRead);
 //		System.out.println(lines);
 
-		Files.lines(pathFileToRead).forEach(System.out::println);
+		Files.lines(pathFileToRead).filter(str -> str.contains("s")).forEach(System.out::println);
+		System.out.println();
+
+		Files.lines(pathFileToRead).map(String::toUpperCase).forEach(System.out::println);
 
 	}
 }
