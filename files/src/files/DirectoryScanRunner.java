@@ -15,11 +15,15 @@ public class DirectoryScanRunner {
 //		Files.walk(currentDirectory, 4).filter(path -> String.valueOf(path).contains(".java")) // 파일 골라내기
 //				.forEach(System.out::println);
 
+//		Files.find(currentDirectory, 4, (path, attributes) -> String.valueOf(path).contains(".java")) // 파일 골라내기
+//		.forEach(System.out::println);
+
 //		Predicate<? super Path> predicate = path -> String.valueOf(path).contains(".java");
 //		Files.walk(currentDirectory, 4).filter(predicate).forEach(System.out::println); // 파일 골라내기
 //
 //		BiPredicate<Path, BasicFileAttributes> matcher = (path, attributes) -> String.valueOf(path).contains(".java");
 //		Files.find(currentDirectory, 4, matcher).forEach(System.out::println);// 파일 골라내기
+
 
 	}
 }
