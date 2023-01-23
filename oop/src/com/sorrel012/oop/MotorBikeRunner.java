@@ -2,14 +2,16 @@ package com.sorrel012.oop;
 
 public class MotorBikeRunner {
 	public static void main(String[] args) {
-		MotorBike ducati = new MotorBike();
-		MotorBike bmw = new MotorBike();
+		MotorBike ducati = new MotorBike(100);
+		MotorBike bmw = new MotorBike(200);
 
 		ducati.start();
 		bmw.start();
 		System.out.println();
 
-		ducati.setSpeed(100);
+		System.out.printf("ducati's initial speed is %dkm/h\n", ducati.getSpeed());
+		System.out.printf("bmw's initial speed is %dkm/h\n", bmw.getSpeed());
+		System.out.println();
 
 		ducati.increaseSpeed(100);
 		bmw.increaseSpeed(100);

@@ -3,6 +3,10 @@ package com.sorrel012.oop;
 public class MotorBike {
 	private int speed;
 
+	public MotorBike(int speed) {
+		this.speed = speed;
+	}
+
 	public int getSpeed() {
 		return speed;
 	}

@@ -3,6 +3,10 @@ package com.sorrel012.oop;
 public class Book {
 	private int noOfCopies;
 
+	public Book(int noOfCopies) {
+		this.noOfCopies = noOfCopies;
+	}
+
 	int getNoOfCopies() {
 		return this.noOfCopies;
 	}

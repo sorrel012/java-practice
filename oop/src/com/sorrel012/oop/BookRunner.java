@@ -2,21 +2,23 @@ package com.sorrel012.oop;
 
 public class BookRunner {
 	public static void main(String[] args) {
-		Book artOfComputerProgramming = new Book();
-		Book effactiveJava = new Book();
-		Book cleanCode = new Book();
+		Book artOfComputerProgramming = new Book(1000);
+		Book effactiveJava = new Book(800);
+		Book cleanCode = new Book(500);
 
-		artOfComputerProgramming.setNoOfCopies(100);
-		effactiveJava.setNoOfCopies(50);
-		cleanCode.setNoOfCopies(45);
+		System.out.printf("artOfComputerProgramming's initail number of copies is %d\n",
+				artOfComputerProgramming.getNoOfCopies());
+		System.out.printf("effactiveJava's initail number of copies is %d\n", effactiveJava.getNoOfCopies());
+		System.out.printf("cleanCode's initail number of copies is %d\n", cleanCode.getNoOfCopies());
+		System.out.println();
 
-		artOfComputerProgramming.increaseCopies(30);
-		effactiveJava.increaseCopies(50);
+		artOfComputerProgramming.increaseCopies(500);
+		effactiveJava.increaseCopies(100);
 		cleanCode.increaseCopies(100);
 
-		artOfComputerProgramming.decreaseCopies(15);
-		effactiveJava.decreaseCopies(20);
-		cleanCode.decreaseCopies(40);
+		artOfComputerProgramming.decreaseCopies(200);
+		effactiveJava.decreaseCopies(300);
+		cleanCode.decreaseCopies(50);
 
 		System.out.printf("artOfComputerProgramming's number of copies is %d\n",
 				artOfComputerProgramming.getNoOfCopies());
