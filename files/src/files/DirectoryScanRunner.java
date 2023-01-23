@@ -2,12 +2,16 @@ package files;
 
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class DirectoryScanRunner {
-
 	public static void main(String[] args) throws IOException {
-		Files.list(Paths.get(".")).forEach(System.out::println);
-	}
+		Path currentDirectory = Paths.get(".");
 
+//		Files.list(currentDirectory).forEach(System.out::println); //파일, 디렉토리 탐색
+
+		Files.walk(currentDirectory, 4).forEach(System.out::println); // 파일,디렉토리 깊이 설정하여 탐색
+
+	}
 }
