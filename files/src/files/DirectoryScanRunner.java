@@ -1,8 +1,11 @@
 package files;
 
 import java.io.IOException;
+import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.nio.file.attribute.BasicFileAttributes;
+import java.util.function.BiPredicate;
 
 public class DirectoryScanRunner {
 	public static void main(String[] args) throws IOException {
@@ -24,6 +27,9 @@ public class DirectoryScanRunner {
 //		BiPredicate<Path, BasicFileAttributes> matcher = (path, attributes) -> String.valueOf(path).contains(".java");
 //		Files.find(currentDirectory, 4, matcher).forEach(System.out::println);// 파일 골라내기
 
+		Files.find(currentDirectory, 4, (path, attributes) -> attributes.isDirectory()).forEach(System.out::println); //현존하는  디렉토리 골라내기
 
+		BiPredicate<Path, BasicFileAttributes> directoryMatcher = (path, attributes) -> attributes.isDirectory(); //현존하는  디렉토리 골라내기
+		Files.find(currentDirectory, 4, directoryMatcher).forEach(System.out::println);
 	}
 }
