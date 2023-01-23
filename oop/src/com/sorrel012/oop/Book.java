@@ -8,14 +8,15 @@ public class Book {
 	}
 
 	void setNoOfCopies(int noOfCopies) { // local variable
-		this.noOfCopies = noOfCopies;
+		if (noOfCopies >= 0)
+			this.noOfCopies = noOfCopies;
 	}
 
 	public void increaseCopies(int howMuch) {
-		this.noOfCopies += howMuch;
+		setNoOfCopies(this.noOfCopies + howMuch);
 	}
 
 	public void decreaseCopies(int howMuch) {
-		this.noOfCopies -= howMuch;
+		setNoOfCopies(this.noOfCopies - howMuch);
 	}
 }
