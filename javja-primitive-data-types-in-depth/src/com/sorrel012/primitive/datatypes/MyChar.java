@@ -18,4 +18,11 @@ public class MyChar {
 		return false;
 	}
 
+	public boolean isDigit() {
+		if (ch >= 48 && ch <= 57)
+			return true;
+
+		return false;
+	}
+
 }
