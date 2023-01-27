@@ -25,4 +25,14 @@ public class MyChar {
 		return false;
 	}
 
+	public boolean isAlphabet() {
+		if (ch >= 65 && ch <= 90)
+			return true;
+
+		if (ch >= 97 && ch <= 122)
+			return true;
+
+		return false;
+	}
+
 }
