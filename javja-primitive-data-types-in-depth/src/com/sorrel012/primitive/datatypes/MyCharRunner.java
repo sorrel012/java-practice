@@ -8,8 +8,8 @@ public class MyCharRunner {
 		System.out.println(myChar.isConsonant());
 		System.out.println(myChar.isDigit());
 		System.out.println(myChar.isAlphabet());
-//		myChar.printLowerCaseAlphabets();
-//		myChar.printUpperCaseAlphabets();
+		MyChar.printLowerCaseAlphabets();
+		MyChar.printUpperCaseAlphabets();
 	}
 
 }

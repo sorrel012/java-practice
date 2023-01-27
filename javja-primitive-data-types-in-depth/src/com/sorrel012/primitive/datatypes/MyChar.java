@@ -41,4 +41,16 @@ public class MyChar {
 		return false;
 	}
 
+	public static void printLowerCaseAlphabets() {
+		for (int i = 97; i < 123; i++)
+			System.out.print((char) i + " ");
+		System.out.println();
+	}
+
+	public static void printUpperCaseAlphabets() {
+		for (int i = 65; i < 91; i++)
+			System.out.print((char) i + " ");
+		System.out.println();
+	}
+
 }
