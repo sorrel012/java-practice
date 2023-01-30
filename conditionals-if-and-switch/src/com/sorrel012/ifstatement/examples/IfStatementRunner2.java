@@ -7,6 +7,7 @@ public class IfStatementRunner2 {
 		System.out.println();
 		puzzle2();
 		System.out.println();
+		puzzle3();
 	}
 
 	private static void puzzle1() {
@@ -34,5 +35,15 @@ public class IfStatementRunner2 {
 		} else {
 			System.out.println("Who am I?");
 		}
+	}
+
+	private static void puzzle3() {
+		int number = 5;
+
+		if (number < 0) {
+			number += 10;
+			number++;
+		}
+		System.out.println(number);
 	}
 }
