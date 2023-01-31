@@ -19,15 +19,15 @@ public class MenuRunner {
 		System.out.println("3 - Divide");
 		System.out.println("4 - Multiply");
 		System.out.print("Chooses Operation number : ");
-		int operation = sc.nextInt();
+		int operator = sc.nextInt();
 
 		int result = 0;
 
-		if (operation == 1) {
+		if (operator == 1) {
 			result = number1 + number2;
-		} else if (operation == 2) {
+		} else if (operator == 2) {
 			result = number1 - number2;
-		} else if (operation == 3) {
+		} else if (operator == 3) {
 			result = number1 * number2;
 		} else {
 			result = number1 / number2;
