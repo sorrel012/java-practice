@@ -6,33 +6,22 @@ public class SwitchExercisesRunner {
 	}
 
 	public static String determineNameOfDay(int dayNumber) {
-		String result = "";
 		switch (dayNumber) {
 		case 0:
-			result = "Sunday";
-			break;
+			return "Sunday";
 		case 1:
-			result = "Monday";
-			break;
+			return "Monday";
 		case 2:
-			result = "Tuesday";
-			break;
+			return "Tuesday";
 		case 3:
-			result = "Wednesday";
-			break;
+			return "Wednesday";
 		case 4:
-			result = "Thursday";
-			break;
+			return "Thursday";
 		case 5:
-			result = "Friday";
-			break;
-		case 6:
-			result = "Saturday";
-			break;
-
+			return "Friday";
+		default:
+			return "Saturday";
 		}
-
-		return result;
 	}
 
 }
