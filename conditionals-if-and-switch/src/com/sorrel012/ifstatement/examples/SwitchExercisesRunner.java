@@ -2,7 +2,7 @@ package com.sorrel012.ifstatement.examples;
 
 public class SwitchExercisesRunner {
 	public static void main(String[] args) {
-		System.out.println(determineNameOfDay(1));
+		System.out.println(determineNameOfDay(8));
 	}
 
 	public static String determineNameOfDay(int dayNumber) {
@@ -19,8 +19,10 @@ public class SwitchExercisesRunner {
 			return "Thursday";
 		case 5:
 			return "Friday";
-		default:
+		case 6:
 			return "Saturday";
+		default:
+			return "Invalid day";
 		}
 	}
 
