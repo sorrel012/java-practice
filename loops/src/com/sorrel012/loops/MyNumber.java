@@ -10,7 +10,7 @@ public class MyNumber {
 
     public boolean isPrime() {
 
-	if(number < 2) {
+	if(number < 2) { //Guard Condition : 메소드 전에 넣는 소스 값이 유효한지 확인
 	    return false;
 	}
 
