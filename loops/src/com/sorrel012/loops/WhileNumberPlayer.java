@@ -7,7 +7,7 @@ public class WhileNumberPlayer {
 	this.limit = limit;
     }
 
-    public void printSquaresUptoLimit() {
+    public void printSquaresUptoLimit() { //제곱수
 	int i = 1;
 
 	while(i*i <= limit) {
@@ -17,7 +17,7 @@ public class WhileNumberPlayer {
 	System.out.println();
     }
 
-    public void printCubesuptoLimit() {
+    public void printCubesuptoLimit() { //세제곱수
 	int i = 1;
 
 	while(i*i*i <= limit) {
