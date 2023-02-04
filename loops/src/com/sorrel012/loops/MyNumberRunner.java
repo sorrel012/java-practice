@@ -13,6 +13,8 @@ public class MyNumberRunner {
 
 	int sumOfDivisors = number.sumOfDivisors();
 	System.out.println("sumOfDivisors = " + sumOfDivisors);
+
+	number.printNumberTriangle();
     }
 
 }
