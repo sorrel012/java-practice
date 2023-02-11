@@ -7,8 +7,6 @@ public class StudentRunner {
     public static void main(String[] args) {
 
 	Student student = new Student("Hanee", 97, 98, 100);
-	Student student1 = new Student("Sorrel", 97, 98);
-	Student student2 = new Student("Eve", 97, 98, 90, 98);
 
 	int number = student.getNumberOfMarks();
 	int sum = student.getTotalSumOfMarks();
