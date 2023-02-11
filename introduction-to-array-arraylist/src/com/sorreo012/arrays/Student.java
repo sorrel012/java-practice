@@ -3,6 +3,7 @@ package com.sorreo012.arrays;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Student {
 
@@ -30,23 +31,11 @@ public class Student {
     } //getTotalSumOfMarks
 
     public int getMaxMark() {
-	int max = Integer.MIN_VALUE;
-	for(int mark : marks) {
-	    if(mark > max) {
-		max = mark;
-	    }
-	}
-	return max;
+	return Collections.max(marks);
     } //getMaxMark
 
     public int getMinMark() {
-	int min = Integer.MAX_VALUE;
-	for(int mark : marks) {
-	    if(mark < min) {
-		min = mark;
-	    }
-	}
-	return min;
+	return Collections.min(marks);
     } //getMinMark
 
     public BigDecimal getAverageMarks() {
@@ -54,6 +43,11 @@ public class Student {
 	int number = getNumberOfMarks();
 
 	return new BigDecimal(sum).divide(new BigDecimal(number), 3, RoundingMode.UP);
+    }
+    
+    @Override
+    public String toString() {
+	return name + marks;
     }
 
 }

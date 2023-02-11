@@ -19,7 +19,10 @@ public class StudentRunner {
 	System.out.println("maximum of marks : " + maxMark);
 	System.out.println("minimum of marks : " + minMark);
 	System.out.println("average of marks : " + average);
-
+	
+	System.out.println(student);
+	
     } //main
+    
 
 }
