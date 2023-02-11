@@ -2,19 +2,23 @@ package com.sorreo012.arrays;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
+import java.util.ArrayList;
 
 public class Student {
 
     private String name;
-    private int[] marks;
+    private ArrayList<Integer> marks = new ArrayList<Integer>();
 
     public Student(String name, int... marks) {
 	this.name = name;
-	this.marks = marks;
+	
+	for(int mark: marks) {
+	    this.marks.add(mark);
+	}
     }
 
     public int getNumberOfMarks() {
-	return marks.length;
+	return marks.size();
     } //getNumberOfMarks
 
     public int getTotalSumOfMarks() {
