@@ -2,6 +2,10 @@ package com.sorrel012.oops;
 
 public class Student extends Person{
 
+    public Student(String name) {
+	super(name);
+    }
+
     private String college;
     private int year;
 

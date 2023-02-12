@@ -4,9 +4,8 @@ public class StudentRunner extends Object {
 
     public static void main(String[] args) {
 
-	Student student = new Student();
+	Student student = new Student("Hanee");
 
-	student.setName("Hanee");
 	student.setEmail("sorrel012@gmail.com");
 	student.setPhoneNumber("010-1234-5678");
 	student.setCollege("KE");
@@ -17,10 +16,6 @@ public class StudentRunner extends Object {
 	System.out.printf("My phone number is %s.\n", student.getPhoneNumber());
 	System.out.printf("I'm a student at %s.\n", student.getCollege());
 	System.out.printf("I'm in %d grade.\n", student.getYear( ));
-
-	Person person = new Person();
-	String value = person.toString();
-	System.out.println(value);
 
     } //main
 }
