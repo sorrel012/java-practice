@@ -1,6 +1,6 @@
 package com.sorrel012.oops;
 
-public class StudentRunner {
+public class StudentRunner extends Object {
 
     public static void main(String[] args) {
 
@@ -16,7 +16,11 @@ public class StudentRunner {
 	System.out.printf("My e-mail address is '%s'.\n", student.getEmail());
 	System.out.printf("My phone number is %s.\n", student.getPhoneNumber());
 	System.out.printf("I'm a student at %s.\n", student.getCollege());
-	System.out.printf("I'm in %d grade.\n", student.getYear());
+	System.out.printf("I'm in %d grade.\n", student.getYear( ));
+
+	Person person = new Person();
+	String value = person.toString();
+	System.out.println(value);
 
     } //main
 }
