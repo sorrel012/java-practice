@@ -24,8 +24,5 @@ public class IntermediateOperation {
 		System.out.println();
 		System.out.println();
 		
-		
-		
-
 	} //main
 }
