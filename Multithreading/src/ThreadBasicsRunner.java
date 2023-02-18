@@ -35,6 +35,7 @@ public class ThreadBasicsRunner {
 		System.out.print("\nTask1 Kicked Off");
 		
 		Task1 task1 = new Task1();
+		task1.setPriority(1);
 		task1.start(); //※task1.done() X
 		
 		//Task2
@@ -42,6 +43,7 @@ public class ThreadBasicsRunner {
 				
 		Task2 task2 = new Task2();
 		Thread task2Thread = new Thread(task2);
+		task2Thread.setPriority(10);
 		task2Thread.start();
 		
 		//Task3
