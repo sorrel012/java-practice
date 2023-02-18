@@ -29,7 +29,7 @@ class Task2 implements Runnable {
 	
 public class ThreadBasicsRunner {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		//Task1
 		System.out.print("\nTask1 Kicked Off");
@@ -45,6 +45,10 @@ public class ThreadBasicsRunner {
 		Thread task2Thread = new Thread(task2);
 		task2Thread.setPriority(10);
 		task2Thread.start();
+		
+		//wait for tas1 to complete
+		task1.join(); //task1 thread가 끝날 때까지 대기
+		task2Thread.join(); //task1 thread가 끝날 때까지 대기
 		
 		//Task3
 		System.out.print("\nTask3 Kicked Off");
