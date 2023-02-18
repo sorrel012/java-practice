@@ -42,9 +42,13 @@ class NumberSquareMapper implements Function<Integer, Integer> {
 public class LambdaBehindTheScreensRunner {
 	
 	public static void main(String[] args) {
-
+		
+		//Storing functions in variables
+		Predicate<? super Integer> evenPredicate = n -> n%2==0;
+		Predicate<? super Integer> oddPredicate = n -> n%2==0;
+		
 		List.of(23,43,34,45,36,48).stream()
-									.filter(n -> n%2==0)
+									.filter(evenPredicate)
 									.forEach(System.out::println);
 		System.out.println();
 
