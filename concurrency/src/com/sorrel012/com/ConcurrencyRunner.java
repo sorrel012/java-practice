@@ -4,12 +4,19 @@ public class ConcurrencyRunner {
 
 	public static void main(String[] args) {
 
-		Counter counter = new Counter();
-		counter.increment();
-		counter.increment();
-		counter.increment();
-		System.out.println(counter.getI());
+		BiCounterWithAtomicInteger atomic = new BiCounterWithAtomicInteger();
+		
+		atomic.incrementI();
+		atomic.incrementI();
+		atomic.incrementI();
+		
+		System.out.println(atomic.getI());
 
+		
+		atomic.decrementI();
+		
+		System.out.println(atomic.getI());
+		
 	} //main
 	
 }
