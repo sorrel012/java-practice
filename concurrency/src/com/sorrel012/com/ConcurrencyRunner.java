@@ -4,18 +4,15 @@ public class ConcurrencyRunner {
 
 	public static void main(String[] args) {
 
-		BiCounterWithAtomicInteger atomic = new BiCounterWithAtomicInteger();
+		BiCounterWithLock lock = new BiCounterWithLock();
 		
-		atomic.incrementI();
-		atomic.incrementI();
-		atomic.incrementI();
+		lock.incrementI();
+		lock.incrementI();
+		lock.incrementJ();
+		lock.incrementI();
 		
-		System.out.println(atomic.getI());
-
-		
-		atomic.decrementI();
-		
-		System.out.println(atomic.getI());
+		System.out.println(lock.getI());
+		System.out.println(lock.getJ());
 		
 	} //main
 	

@@ -30,4 +30,5 @@ public class BiCounterWithLock {
 	public int getJ() {
 		return j;
 	}
+	
 }
