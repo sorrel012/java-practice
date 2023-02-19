@@ -1,4 +1,4 @@
-package com.sorrel012.tips.eclipse;
+package com.sorrel012.tips;
 
 final class FinalClass { //클래스에 final을 붙이면 상속이 되지 않는다.
 	

@@ -1,4 +1,4 @@
-package com.sorrel012.tips.eclipse;
+package com.sorrel012.tips;
 
 class Client {
 	
