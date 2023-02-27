@@ -1,15 +1,21 @@
 # ✏java 공부
 
+<br/>
+
 ## 🖥OpenJDK 11(11.0.1+13)
 ### https://jdk.java.net/archive/
+
+<br/>
 
 ## 🖥eclipse(2021-03)
 ### https://www.eclipse.org/downloads/packages/release/2021-03/r 
 
+<br/>
 
 ### ✔환경 변수 설정
 ![image](https://user-images.githubusercontent.com/115568532/221456070-1319b008-0692-4060-9555-796e408e3d43.png)
 
+<br/>
 
 ### ✔단축키Ctrl + F11 : 컴파일(실행) 
 - Ctrl +  + / - : 폰트 크기 조절
@@ -43,6 +49,8 @@
 - Ctrl + Tab : 작업 파일 변경(이동)
   - Keys → Next Editer 에서 Ctrl + Tab으로 수정
 
+<br/>
+
 ### ✔Templates
 
 #### - printf    
@@ -73,12 +81,16 @@
       ${cursor}
 
     } //main
+    
+<br/>
 
 ### ✔확장 플러그인
 - Eclipse Color Theme : 다크모드 설정을 위한 플러그인
 
 - quick search : 패키지에 있는 파일을 쉽게 찾고 싶을 때, 키워드를 입력하면 해당 키워드가 들어간 클래스를 모두 찾아줌.
   - 단축키: Ctrl + Alt + Shift + L
+
+<br/>
 
 ### ✔GIT
 - remote
