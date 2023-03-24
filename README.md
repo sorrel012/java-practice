@@ -64,9 +64,9 @@
     System.out.print(${word_selection}${});${cursor}
     
 #### - BufferedReader
-![image](https://user-images.githubusercontent.com/115568532/221459173-50563d59-40fb-4978-9ee1-a00dda7f20fe.png)
+![image](https://user-images.githubusercontent.com/115568532/227539721-d6e2fee9-5c95-4870-83a9-6f41deec1d5b.png)
     
-    BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     
 #### - Scanner
 ![image](https://user-images.githubusercontent.com/115568532/221459281-cc569b42-9df0-40cb-99dd-6f6f5d844290.png)
