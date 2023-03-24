@@ -92,7 +92,28 @@
 
 <br/>
 
-### ✔ 알고리즘
+### ✔GIT
+- remote
+  - git remote add origin https://github.com/sorrel012/jsp-practice
+
+- remote 확인
+  - git remote -v
+  
+- pull  
+  - git pull origin main  
+  
+- add
+  - git add -A (작업 내용 모두 추가)
+  
+- commit
+  - git commit -m "메시지 내용"
+  
+- push
+  - git push origin main
+
+<br/>
+
+### 📚 알고리즘
 - String
 
 - Array
@@ -112,24 +133,3 @@
 - Greedy
 
 - dynamic programming
-
-<br/>
-
-### ✔GIT
-- remote
-  - git remote add origin https://github.com/sorrel012/jsp-practice
-
-- remote 확인
-  - git remote -v
-  
-- pull  
-  - git pull origin main  
-  
-- add
-  - git add -A (작업 내용 모두 추가)
-  
-- commit
-  - git commit -m "메시지 내용"
-  
-- push
-  - git push origin main
