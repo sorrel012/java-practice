@@ -110,3 +110,26 @@
   
 - push
   - git push origin main
+
+<br/>
+
+### 📚 알고리즘
+- String
+
+- Array
+
+- Two pointers, Sliding window[
+
+- HashMap, TreeSet 
+
+- Stack, Queue
+
+- Sorting and Searching
+
+- Recursive, Tree, Graph
+
+- DFS(Depth First Search), BFS(Breadth First Search)
+
+- Greedy
+
+- dynamic programming
