@@ -37,21 +37,16 @@ public class Q08 {
         Queue<Person> q = new LinkedList<Person>();
         
         for(int i = 0; i < n; i++) {
-            Person p = new Person();
-            
-            p.setId(i);
-            p.setPriority(patients[i]);
-            
+            Person p = new Person(i, patients[i]);
             q.offer(p);
         }
-        
         
         while(!q.isEmpty()) {
 
             Person tmp = q.poll();
 
             for(Person ps : q) {
-                if(ps.getPriority() > tmp.getPriority()) {
+                if(ps.priority > tmp.priority) {
                     q.offer(tmp);
                     tmp = null;
                     break;
@@ -59,7 +54,7 @@ public class Q08 {
             }
             if(tmp != null) {
                 answer++;
-                if(tmp.getId() == m) {
+                if(tmp.id == m) {
                     return answer;
                 }
             }
@@ -72,23 +67,12 @@ public class Q08 {
 
 class Person {
     
-    private int id;
-    private int priority;
+    public int id;
+    public int priority;
     
-    public int getId() {
-        return id;
-    }
-    
-    public int getPriority() {
-        return priority;
-    }
-
-    public void setPriority(int priority) {
-        this.priority = priority;
-    }
-
-    public void setId(int id) {
+    public Person(int id, int priority) {
         this.id = id;
+        this.priority = priority;
     }
     
 }
