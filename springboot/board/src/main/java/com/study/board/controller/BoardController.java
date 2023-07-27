@@ -32,7 +32,6 @@ public class BoardController {
     public String boardList(Model model) {
 
         model.addAttribute("list", boardService.boardList());
-
         return "boardlist";
     }
 
@@ -40,8 +39,16 @@ public class BoardController {
     public String boardView(Model model, Integer id) {
 
         model.addAttribute("board", boardService.boardView(id));
-
         return "boardview";
     }
+
+    @GetMapping("/board/delete")
+    public String boardDelete(Integer id) {
+
+        boardService.boardDelete(id);
+        return "redirect:/board/list";
+    }
+
+
 
 }
