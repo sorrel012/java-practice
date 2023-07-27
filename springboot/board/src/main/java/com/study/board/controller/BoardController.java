@@ -37,9 +37,17 @@ public class BoardController {
     }
 
     @GetMapping("/board/list")
-    public String boardList(Model model, @PageableDefault(page = 0, size = 10, sort = "id", direction = Sort.Direction.DESC) Pageable pagable) {
+    public String boardList(Model model,
+                            @PageableDefault(page = 0, size = 10, sort = "id", direction = Sort.Direction.DESC) Pageable pagable,
+                            String searchKeyword) {
 
-        Page<Board> list = boardService.boardList(pagable);
+        Page<Board> list = null;
+
+        if(searchKeyword != null) {
+            list = boardService.boardSerchList(searchKeyword, pagable);
+        } else {
+            list = boardService.boardList(pagable);
+        }
 
         int nowPage = list.getPageable().getPageNumber() + 1;
         int startPage = Math.max(nowPage - 4, 1);
