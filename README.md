@@ -2,6 +2,11 @@
 
 <br/>
 
+## 📄 공부 내용 정리
+### <a href='https://sorrel012.tistory.com/category/%EC%9E%90%EB%B0%94%28JAVA%29'>블로그</a>
+
+<br>
+
 ## 🖥OpenJDK 11(11.0.1+13)
 ### https://jdk.java.net/archive/
 
